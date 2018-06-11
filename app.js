@@ -15,8 +15,7 @@
       campgroundRoutes = require("./routes/campgrounds"),
       authRoutes       = require("./routes/auths");
 
-//mongoose.connect("mongodb://kallal:kallal@ds237409.mlab.com:37409/wildlife");
-mongoose.connect("mongodb://localhost/yelp-camp-v1");
+//(heroku and mongolab link are deleted)
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
