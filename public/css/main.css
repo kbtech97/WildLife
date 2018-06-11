@@ -1,0 +1,21 @@
+body{
+  background-color: ;
+}
+
+.comment{
+  background-color: #CfCbCf;
+}
+
+.thumnail img {
+  width: 100%
+}
+
+#campgorund{
+  padding: 0;
+  flex-wrap: wrap;
+  height: 50vh;s
+}
+
+#delete{
+  display: inline;
+}

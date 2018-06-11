@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+<div class="container text-center">
+  <header class="jumbotron">
+    <div class="container">
+        <h1>Wellcome TO Wild Life</h1>
+        <p class="text-center">View all the turist places of all over the World</p>
+        <p>
+          <a class="btn btn-info" href="/campgrounds/new">Add Your Favorite Turist Places</a>
+        </p>
+    </div>
+  </header>
+
+
+  <div class="col-lg-12">
+    <h4 class="text-left">Most Popular Turist Places</h4>
+  </div>
+
+  <div class="row text-center">
+      <% campgrounds.forEach(function(campgrounds){ %>
+        <div class="col-md-3 col-sm-6">
+          <div id="campgorund" class="thumbnail">
+           <a href="/campgrounds/<%= campgrounds._id %>"><img class="campimg img-rounded" src="<%= campgrounds.image %>"> </a>
+            <div class="caption">
+            <a href="/campgrounds/<%= campgrounds._id %>"> <h3><%= campgrounds.name.substring(0, 20) %> </h3> </a>
+              <p>
+                <a href="/campgrounds/<%= campgrounds._id %>"><strong>More Info</strong></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+  </div>
+</div>
+
+
+<% include ../partials/footer %>

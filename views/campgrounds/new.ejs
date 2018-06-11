@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<div class="container">
+  <h1 style="text-align: center;">Add Favorite Turist Places</h1>
+  <div style="width:30%; margin: 0 auto;">
+    <form action="/campgrounds" method="post">
+    <div>
+      <input class="form-control" type="text" name="name" placeholder="NAME">
+    </div>
+    <div>
+      <input style="margin: 1% 0;" class="form-control" type="text" name="image" placeholder="IMAGE URL">
+    </div>
+    <div>
+      <input style="margin: 1% 0;" class="form-control" type="text" name="description" placeholder="ADD DESCRIPTION">
+    </div>
+      <button style="margin: 1% 0;" class="btn btn-lg btn btn-success btn-block">SUBMIT!</button>
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>
